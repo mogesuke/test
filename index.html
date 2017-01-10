@@ -1,13 +1,17 @@
 <html>
   <head>
     <title>test</title>
+    <script src="./js/jquery-3.1.0.min.js"></script>
     <script>
-      window.addEventListener("beforeunload", function () {
-      	alert("test");
-      });
+var onBeforeunloadHandler = function() {
+    console.log("test");
+};
+// イベントを登録
+window.addEventListener('beforeunload', onBeforeunloadHandler, false);
+
     </script>
   </head>
   <body>
-  	test
+  
   </body>
 </html>
